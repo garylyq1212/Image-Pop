@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <title>Image Pop</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="text-center mt-2"><i class="fas fa-images"></i>Image Pop</h1>
+        </header>
+        <section class="text-center">
+            <h4 class="mt-4">Include an Image to see whether it will display or not!?</h4>
+
+            <!-- Display message -->
+            
+            <form id="image-form" class="mt-5">
+                <div class="form-group">
+                    <label for="imageInputFile">Image File: </label>
+                    <input type="file" class="from-control" id="imageInputFile" accept="image/*" required>
+                </div>
+                <input type="submit" value="Submit" name="pic" class="btn btn-outline-info mt-2 btn-block">
+            </form>
+            <div class="image mt-3">
+                <!-- Add img tag from JS -->
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
